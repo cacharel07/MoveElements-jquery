@@ -1,0 +1,90 @@
+.test{
+    position: absolute;
+}
+
+img{
+    height:100%;
+}
+
+.menuoption{
+    position: fixed;
+    width:100px;
+    height:50px;
+    bottom:0;
+    right:0;
+}
+
+.message{
+    display: none;
+    background-color: #333;
+    bottom:60px;
+    right:15px;
+    padding: 10px;
+    color: #d1d1d1;
+    position:absolute;
+    width: 150px;
+    text-align: right; 
+}
+
+.optiondeplacer{
+    float:left;
+    margin-top:5px; 
+    margin-left:5px;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    background-color:black;
+    border-radius: 50%;
+    box-shadow:2px 2px 8px #aaa;
+}
+
+.optiondeplacer img, .optionrotation img{
+    margin:10% 0 10% 0;
+    height:80%;
+    width: auto;
+    text-align: center;
+}
+
+.optionrotation{
+    float:right;
+    margin-top:5px; 
+    margin-right:5px;
+    width:40px;
+    height: 40px;
+    background-color:black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow:2px 2px 8px #aaa;
+}
+
+.optiondeplacer:hover, .optionrotation:hover{
+    cursor: pointer;
+}
+
+.disabled{
+    pointer-events : none;
+}
+
+
+/*Le code suivant gére le rotation*/
+@keyframes rotationinfinie {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*En modifiant le temps de l'animation, vous pouvez ralentir ou accélerer la rotation de l'élement*/
+.rotationinfinie{
+    animation: rotationinfinie 4s linear infinite;
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.active {
+    background-color: red;
+}
