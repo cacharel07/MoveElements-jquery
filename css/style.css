@@ -5,7 +5,7 @@ par Camille CHAREL
 
 /*Exemple d'une div mise en forme grâce à son ID unique*/
 #div2{
-    background-color: red !important;
+    background-color: red;
     height: 100px;
     width:100px;
     left:900px;
