@@ -3,6 +3,14 @@ Plugin MoveElements-jquery V.1
 par Camille CHAREL
 */
 
+/*Exemple d'une div mise en forme grâce à son ID unique*/
+#div1{
+    background-color: red !important;
+    height: 100px;
+    width:100px;
+    left:900px;
+}
+
 .test{
     position: absolute;
 }
